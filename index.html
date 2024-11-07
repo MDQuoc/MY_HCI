@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MyProject</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,7 +14,7 @@
   <body>
     <!-- header design -->
     <header class="header">
-      <a href="" class="logo">portfolio</a>
+      <a href="" class="logo">Subject Management</a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -22,7 +22,10 @@
         <a href="#home" class="active"> Home </a>
         <a href="#about"> about</a>
         <a href="#lab"> lab</a>
-        <a href="#contact"> contact</a>
+        <a href="#contact"> contact</a
+        ><a href="javascript:void(0);" class="login" onclick="openModal()"
+          >Login</a
+        >
       </div>
     </header>
     <!-- home section design -->
@@ -123,7 +126,7 @@
           <img src="assets/img/lab2.jpg" alt="2" />
           <div class="lab-player">
             <h4>Lab 2</h4>
-            
+
             <a href="lab2.html"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -132,7 +135,7 @@
           <img src="assets/img/lab3.jpg" alt="3" />
           <div class="lab-player">
             <h4>Lab 3</h4>
-            
+
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -141,7 +144,7 @@
           <img src="assets/img/lab4.jpg" alt="4" />
           <div class="lab-player">
             <h4>Lab 4</h4>
-    
+
             <a href="lab4.html"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -150,7 +153,7 @@
           <img src="assets/img/lab5.jpg" alt="5" />
           <div class="lab-player">
             <h4>Lab 5</h4>
-           
+
             <a href="lab5.html"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -192,6 +195,75 @@
       </div>
       <div class="footer-iconTop">
         <a href="#home"><i class="bx bx-up-arrow-alt"></i> </a>
+      </div>
+    </div>
+    <!-- login model -->
+    <div id="loginModal" class="modal">
+      <div class="container" id="container">
+        <div class="form-container register-container">
+          <form action="#">
+            <h1>Register</h1>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Register</button>
+            <span>or use your account</span>
+            <div class="social-container">
+              <a href="#" class="social"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="#" class="social"><i class="bx bxl-google"></i></a>
+              <a href="#" class="social"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-container login-container">
+          <form action="#">
+            <h1>Login</h1>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <div class="content">
+              <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label>Remember me</label>
+              </div>
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+              </div>
+            </div>
+            <button>Login</button>
+            <span>or use your account</span>
+            <div class="social-container">
+              <a href="#" class="social"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="#" class="social"><i class="bx bxl-google"></i></a>
+              <a href="#" class="social"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1 class="title">Hello <br />Friend</h1>
+              <p>if Your have an account, login here and have fun</p>
+              <button class="ghost" id="login">
+                <i class="bx bx-left-arrow-alt"></i>Login
+              </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1 class="title">Start your <br />Journey now</h1>
+              <p>
+                if you don't have an account yet, join us and start your journey
+              </p>
+              <button class="ghost" id="register">
+                Register
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="assets/js/js.js"></script>
