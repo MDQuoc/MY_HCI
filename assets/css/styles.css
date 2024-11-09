@@ -878,7 +878,7 @@ button#login:hover i {
   transform: translateX(-100%);
 }
 .overlay {
-  background-image: url("./assets/img/hinh-nen-desktop.jpg");
+  background-image: url("../img/hinh-nen-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
