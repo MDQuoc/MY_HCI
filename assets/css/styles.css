@@ -310,7 +310,22 @@ ul {
 .education p {
   font-size: 1.5rem;
 }
-
+.navbar .login{
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 20px;
+  padding: 10px 20px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.navbar .login:hover{
+  color: var(--text-color);
+}
 .work-experience {
   margin-top: 30px;
   margin-left: 40px;
@@ -863,7 +878,7 @@ button#login:hover i {
   transform: translateX(-100%);
 }
 .overlay {
-  background-image: url("/assets/img/img.gif");
+  background-image: url("/assets/img/hinh-nen-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
